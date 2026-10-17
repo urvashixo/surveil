@@ -18,3 +18,26 @@ data/*.db-journal
 data/*.mp4
 backend/models/*.onnx
 vendor/
+
+# Surveil Python environments
+.venv_new/
+venv/
+env/
+**/Lib/site-packages/
+
+# Local secrets and runtime databases
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite
+*.sqlite3
+
+# ML model weights
+*.pt
+*.pth
+*.onnx
+
+# Runtime logs
+*.log
+*.tmp
